@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "deploymentId": {
+      "value": ""
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "sitecoreAdminPassword": {
+      "value": "sitecoreadminpassword"
+    },
+    "licenseXml": {
+      "value": ""
+    },
+    "repAuthenticationApiKey": {
+      "value": "3b6d5abf-3b30-431f-b70c-99fa4f08e355"
+    },
+    "sqlServerLogin": {
+      "value": "adminlogin"
+    },
+    "sqlServerPassword": {
+      "value": "adminpassword"
+    },
+    "siMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore.IdentityServer.8.0.16.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "cmMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_cm.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "cdMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_cd.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "prcMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_prc.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "xcRefDataMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1referencedata.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "xcCollectMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1collection.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "xcSearchMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1collectionsearch.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "cortexProcessingMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1cortexprocessing.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "cortexReportingMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1cortexreporting.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "maOpsMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1marketingautomation.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "maRepMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_xp1marketingautomationreporting.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "authCertificateBlob": {
+      "value": "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"
+    },
+    "authCertificatePassword": {
+      "value": "Alamakota123"
+    },
+    "allowInvalidClientCertificates": {
+      "value": true
+    },
+    "modules": {
+      "value": {
+        "items": [
+          {
+            "name": "bootloader",
+            "templateLink": "https://github.com/Sitecore/Sitecore-Azure-Quickstart-Templates/blob/master/Sitecore%2010.3.3/XP/addons/bootloader.json",
+            "parameters": {
+              "msDeployPackageUrl": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore.Cloud.Integration.Bootload.wdp.zip"
+            }
+          }
+        ]
+      }
+    },
+    "exmDdsMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore%2010.4.1%20rev.%20012149%20(Cloud)_dds.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    },
+    "exmCmMsDeployPackageUrl": {
+      "value": "https://sitecore104storage.blob.core.windows.net/sitecore104container/Sitecore.Patch.EXM%2010.4.1%20rev.%20012149%20(Cloud)_cm.scwdp.zip&sp=r&st=2025-07-23T12:14:43Z&se=2025-11-23T21:29:43Z&spr=https&sv=2024-11-04&sr=c&sig=Zhs2d3Sdom6AAZlS5Bd9srd2b51TY5wM6APCs4fo3nU%3D"
+    }
+  }
+}

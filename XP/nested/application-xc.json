@@ -153,7 +153,7 @@
 
     "xcSolrConnectionString": {
       "type": "securestring",
-      "defaultValue": ""
+      "minLength": 1
     },
 
     "useApplicationInsights": {

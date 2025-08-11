@@ -234,8 +234,7 @@
               "XConnect Server Application Insights Connection String": "[if(parameters('useApplicationInsights'), reference(resourceId('Microsoft.Insights/Components', variables('appInsightsNameTidy')), variables('appInsightsApiVersion')).ConnectionString, '')]",
               "XP Performance Counters Type": "[if(parameters('useApplicationInsights'), concat('Sitecore:XConnect:Diagnostics:PerformanceCounters:', parameters('xpPerformanceCountersType')), 'Sitecore:XConnect:Diagnostics:PerformanceCounters:Disable')]",
               "XConnect Server Instance Name": "CollectionSearch",
-              "License Xml": "[parameters('licenseXml')]",
-              "Search SOLR Core Application Connection String": "[parameters('xcSolrConnectionString')]"
+              "License Xml": "[parameters('licenseXml')]"
             }
           }
         ]

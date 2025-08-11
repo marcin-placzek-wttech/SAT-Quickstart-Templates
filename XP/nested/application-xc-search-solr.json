@@ -14,14 +14,7 @@
 
     "xcSearchWebAppNameTidy": "[toLower(trim(parameters('xcSearchWebAppName')))]",
 
-    "xcSearchIndexNameTidy": "[toLower(trim(parameters('xcSearchIndexName')))]",
     "appInsightsNameTidy": "[toLower(trim(parameters('applicationInsightsName')))]",
-
-    "xcSolrConnectionStringTidy": "[trim(parameters('xcSolrConnectionString'))]",
-    "xcSolrConnectionStringBaseUri": "[trim(first(split(variables('xcSolrConnectionStringTidy'), ';')))]",
-    "xcSolrConnectionStringBaseUriTidy": "[replace(replace(concat(variables('xcSolrConnectionStringBaseUri'), '/'), '//', '/'), ':/', '://')]",
-    "xcSolrConnectionStringParameters": "[replace(variables('xcSolrConnectionStringTidy'), variables('xcSolrConnectionStringBaseUri'), '')]",
-    "xcSolrConnectionString": "[if(empty(variables('xcSolrConnectionStringTidy')), '', if(contains(variables('xcSolrConnectionStringTidy'), 'searchstax'), variables('xcSolrConnectionStringTidy'), uri(variables('xcSolrConnectionStringBaseUriTidy'), concat(variables('xcSearchIndexNameTidy'), variables('xcSolrConnectionStringParameters')))))]",
 
     "azureServiceBusVersion": "2022-01-01-preview",
     "azureServiceBusNamespaceNameTidy": "[toLower(trim(parameters('azureServiceBusNamespaceName')))]"
@@ -242,7 +235,7 @@
               "XP Performance Counters Type": "[if(parameters('useApplicationInsights'), concat('Sitecore:XConnect:Diagnostics:PerformanceCounters:', parameters('xpPerformanceCountersType')), 'Sitecore:XConnect:Diagnostics:PerformanceCounters:Disable')]",
               "XConnect Server Instance Name": "CollectionSearch",
               "License Xml": "[parameters('licenseXml')]",
-              "Search SOLR Core Application Connection String": "[variables('xcSolrConnectionString')]"
+              "Search SOLR Core Application Connection String": "[parameters('xcSolrConnectionString')]"
             }
           }
         ]

@@ -21,7 +21,7 @@
     "xcSolrConnectionStringBaseUri": "[trim(first(split(variables('xcSolrConnectionStringTidy'), ';')))]",
     "xcSolrConnectionStringBaseUriTidy": "[replace(replace(concat(variables('xcSolrConnectionStringBaseUri'), '/'), '//', '/'), ':/', '://')]",
     "xcSolrConnectionStringParameters": "[replace(variables('xcSolrConnectionStringTidy'), variables('xcSolrConnectionStringBaseUri'), '')]",
-    "xcSolrConnectionString": "[uri(variables('xcSolrConnectionStringBaseUriTidy'), concat(variables('xcSearchIndexNameTidy'), variables('xcSolrConnectionStringParameters')))]",
+    "xcSolrConnectionString": "[if(empty(variables('xcSolrConnectionStringTidy')), '', if(contains(variables('xcSolrConnectionStringTidy'), 'searchstax'), variables('xcSolrConnectionStringTidy'), uri(variables('xcSolrConnectionStringBaseUriTidy'), concat(variables('xcSearchIndexNameTidy'), variables('xcSolrConnectionStringParameters')))))]",
 
     "azureServiceBusVersion": "2022-01-01-preview",
     "azureServiceBusNamespaceNameTidy": "[toLower(trim(parameters('azureServiceBusNamespaceName')))]"

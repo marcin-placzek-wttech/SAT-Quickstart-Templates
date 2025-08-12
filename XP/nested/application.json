@@ -255,6 +255,17 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
+    "redisPublicNetworkAccess": {
+      "type": "string",
+      "allowedValues": [
+        "Enabled",
+        "Disabled"
+      ],
+      "defaultValue": "Disabled",
+      "metadata": {
+        "description": "Whether or not public endpoint access is allowed for this Redis Cache. Disabled means only private endpoint access is allowed."
+      }
+    },
 
     "solrConnectionString": {
       "type": "securestring",
